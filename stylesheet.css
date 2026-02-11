@@ -28,7 +28,7 @@ section.main-content-area {
     }
 
     section.brown-box {
-        background-color: olivedrab;
+        background-color: lightcyan;
         padding: 20px;
         border-radius: 10px;
         min-height: 400px;
@@ -45,10 +45,15 @@ section.main-content-area {
             flex-direction: column;
             justify-content: space-between;
             > * {
-                background-color: darkolivegreen;
+                background-color: transparent;
             }
             nav {
                 min-height: 60%;
+            }
+            .links {
+                display:flex;
+                flex-direction:column-reverse;
+                align-items: center;
             }
         }
         .right-side {
