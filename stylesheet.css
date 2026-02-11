@@ -48,7 +48,15 @@ section.main-content-area {
                 background-color: transparent;
             }
             nav {
-                min-height: 60%;
+                a {
+                    display: block;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: white;
+                        background-color: black;
+                    }
+                }
             }
             .links {
                 display:flex;
@@ -78,7 +86,7 @@ section.main-content-area {
         }
     }
 
-    nav {/*applies to all nav tags found inside of section.main-content-area*/
+    nav.secondary {/*applies to all nav tags found inside of section.main-content-area*/
         min-height: 20px;
         border: 1px dotted green;
         text-align: right;
