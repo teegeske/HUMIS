@@ -6,7 +6,6 @@ section.subhead {
     height: 50px;
 }
 div#parent {
-    border: 1px solid black;
     width: 780px;
     /*margin: 0px;*/
 }
@@ -14,7 +13,6 @@ div#parent {
 div#parent section {
     /*height:100px;*/
     /*margin: 10px;*/
-    border: 1px solid black;
 }
 
 section.main-content-area {
@@ -33,10 +31,10 @@ section.main-content-area {
         border-radius: 10px;
         min-height: 400px;
         display:flex;
+        justify-content: space-between;
 
         > * {
-            background-color: lightcyan;
-            margin: 10px;
+            /*margin: 10px;*/
         }
         .left-side
         {
@@ -51,6 +49,9 @@ section.main-content-area {
                 a {
                     display: block;
                     text-decoration: none;
+                    border-bottom: 2px solid #60663e;
+                    padding: 10px;
+                    font-size: 10px;
 
                     &:hover {
                         color: white;
@@ -70,6 +71,7 @@ section.main-content-area {
             width: 60%;
             img{
                 margin-bottom:10px;
+                width: 100%;
             }
             p {
                 font-size: 10px;
@@ -88,7 +90,7 @@ section.main-content-area {
 
     nav.secondary {/*applies to all nav tags found inside of section.main-content-area*/
         min-height: 20px;
-        border: 1px dotted green;
+        /*border: 1px dotted green;*/
         text-align: right;
         padding-right: 20px;
         font-size: 11px;
@@ -123,5 +125,7 @@ section.footer {
 h4 {
     color: red;
     border-bottom: 2px dashed red;
+    font-weight: unset;
+    margin: 0 0 5px 0;
 }
 
