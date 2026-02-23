@@ -4,7 +4,7 @@ body {
 }
 section.subhead {
     background: url(files/histHomepic.jpg) top left no-repeat;
-    height: 50px;
+    height: 60px;
 }
 div#parent {
     width: 780px;
@@ -17,16 +17,20 @@ div#parent section {
     /*margin: 10px;*/
 }
 
+section.titlebox {
+
+}
+
 section.main-content-area {
     min-height: 400px;
     display: flex;
     flex-direction: column;
     background-image: url("files/uofu_medallion_rt.gif");
     background-position: bottom right;
+    background-repeat: no-repeat;
 
     section {
         padding: 20px;
-        border-radius: 10px;
     }
 
     section.brown-box {
@@ -37,7 +41,7 @@ section.main-content-area {
         display:flex;
         justify-content: space-between;
         width: 90%;
-        margin: 0 auto 70px;
+        margin: 0 auto 60px;
 
         > * {
             /*margin: 10px;*/
@@ -94,6 +98,17 @@ section.main-content-area {
                     text-decoration: underline;
                 }
             }
+            h5 {
+                color: red;
+                font-weight: unset;
+                text-align: right;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                    a {
+                        text-decoration: none;
+                        color: red;
+                    }
+            }
         }
     }
 
@@ -132,10 +147,9 @@ section.footer {
     font-size: 10px;
     color: white;
     padding: 8px;
-    margin: 0px;
 }
 h4 {
-    color: red;
+    color: darkolivegreen;
     border-bottom: 2px dashed red;
     font-weight: unset;
     margin: 0 0 5px 0;
