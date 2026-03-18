@@ -3,7 +3,7 @@ body {
     background-color: darkgray;
 }
 section.subhead {
-    background: url(files/histHomepic.jpg) top left no-repeat;
+    background: url(files/histBooks01.jpg) top left no-repeat;
     height: 60px;
 }
 div#parent {
@@ -25,29 +25,15 @@ section.main-content-area {
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    background-image: url("files/uofu_medallion_rt.gif");
-    background-position: bottom right;
-    background-repeat: no-repeat;
-
+    background-color: white;
     section {
-        padding: 20px;
+        /*padding: 20px;*/
     }
-
-    section.brown-box {
-        background-color: #BEC3A1;
-        padding: 20px;
-        border-radius: 10px;
-        min-height: 400px;
+    section.bluebox {
         display:flex;
-        justify-content: space-between;
-        width: 90%;
-        margin: 0 auto 60px;
-
-        > * {
-            /*margin: 10px;*/
-        }
-        .left-side
-        {
+        flex-direction: row;
+        background-color: blue;
+        /*.left-side {
             width: 40%;
             display: flex;
             flex-direction: column;
@@ -55,6 +41,20 @@ section.main-content-area {
             > * {
                 background-color: transparent;
             }
+            .links {
+                display:flex;
+                flex-direction:column-reverse;
+                align-items: center;
+            }
+        }*/
+        .leftnav {
+            display: flex;
+            background-color: #F3F3F4;
+            width: 25%;
+            border-right: 2px solid #BABD9B;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             nav {
                 a {
                     display: block;
@@ -64,7 +64,7 @@ section.main-content-area {
                     font-size: 10px;
                     text-transform: uppercase;
                     color: black;
-                    text-align: right;
+                    text-align: left;
 
                     &:hover {
                         color: white;
@@ -81,7 +81,7 @@ section.main-content-area {
         .right-side {
             background-color: white;
             padding: 10px;
-            width: 60%;
+            width: 75%;
             img{
                 margin-bottom:10px;
                 width: 100%;
