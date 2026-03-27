@@ -4,7 +4,7 @@ body {
 }
 
 section.subhead {
-    background: url(files/histBooks01.jpg) top left no-repeat;
+    background: url(../files/histBooks01.jpg) top left no-repeat;
     height: 75px;
     border-bottom: 7px solid #8B9156;
 }
